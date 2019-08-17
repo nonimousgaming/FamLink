@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FamLink</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+</resources>
