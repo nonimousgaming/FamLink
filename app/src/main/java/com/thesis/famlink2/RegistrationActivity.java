@@ -64,7 +64,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         String message = jsonObject.getString("message");
                         String status = jsonObject.getString("status");
                         Toast.makeText(RegistrationActivity.this, message, Toast.LENGTH_SHORT).show();
-                        if(status == "400") {
+                        if(status.equals("400")) {
                             Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
                             startActivity(intent);
                         }

@@ -75,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
                         String message = jsonObject.getString("message");
                         String status = jsonObject.getString("status");
                         Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                        if(status.equals("400")) {
+                            Intent intent = new Intent(MainActivity.this, FamilyActivity.class);
+                            startActivity(intent);
+                        }
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
